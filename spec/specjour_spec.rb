@@ -13,6 +13,7 @@ describe Specjour do
   end
 
   it "fails as an example" do
+  	debugger
     boo
   end
 end
