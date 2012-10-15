@@ -8,10 +8,7 @@ module Specjour
     end
 
     def load_object(data)
-      if data.respond_to?('sub')
-        #debugger
-        Marshal.load(data.sub(TERMINATOR_REGEXP, ''))
-      end
+      Marshal.load(data.sub(TERMINATOR_REGEXP, ''))
     end
   end
 end
