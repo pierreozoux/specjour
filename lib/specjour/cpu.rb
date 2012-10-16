@@ -3,8 +3,9 @@ module Specjour
     def self.cores
       case platform
       when /darwin/
-        command('hostinfo') =~ /^(\d+).+physically/
-        $1.to_i
+        #command('hostinfo') =~ /^(\d+).+physically/
+        #$1.to_i
+        1
       when /linux/
         command('grep --count processor /proc/cpuinfo').to_i
       end
